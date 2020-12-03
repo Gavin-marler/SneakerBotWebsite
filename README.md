@@ -21,4 +21,4 @@ You can then follow the steps to update your database.
 * [Here](https://docs.python.org/3.8/) is the Python reference.
 * [Here](https://www.sqlite.org/index.html) is the SQLite reference.
 * [Here](https://stackoverflow.com) is Stack Overflow.
-* [Here] (https://www.youtube.com/watch?v=h7rvyDK70FA&t=3s) is some basics on Django.
+* [Here](https://www.youtube.com/watch?v=h7rvyDK70FA&t=3s) is some basics on Django.
