@@ -1,6 +1,6 @@
 # SneakerBotWebsite
 ## Overview
-
+This is a Django Web App that is designed to help customers preorder sneakers that will be purchased using a python sneaker bot. This website is user friendly and allows the user to navigate the site, selceting sneakers they wish to preorder. Their selections and information is then sent to us through email and we run the bot on the drop date of the sneakers.
 
 ## Development Environment
 * VS Code
@@ -9,12 +9,20 @@
 * Django
 
 ## Execution
+Install dependencies by running 
+```python
+pip3 install -r requirements.txt
+```
 To run...
+```python
+python3 manage.py runserver
+```
 
 The ouput is like this:   
 ![code]()
 
-You can then follow the steps to update your database.
+You can then click on the IP address to open the site. The site looks like this.
+![site]()
 
 ## Useful Websites
 
