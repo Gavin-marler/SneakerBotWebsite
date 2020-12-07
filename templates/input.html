@@ -31,13 +31,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Home</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}">Home
+            <a class="nav-link" href="{% url 'input' %}">Cart
               <span class="sr-only">(current)</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'input' %}">Cart</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}">About Us</a>
@@ -53,10 +53,10 @@
   <!-- Page Content -->
   <div class="container">
 
+    <form action="{% url 'runBot' %}">
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
-      <form action="{% url 'runBot' %}">
-        <div class="col-lg-5">
+        <div class="col-lg-7">
           <h2>Contact Information</h2>
           <!--First Name-->
           <label for="first_name">First Name: </label>
@@ -92,8 +92,7 @@
           <input type="month" name="exp_date"><br>
           <!--CCV Security Number-->
           <label for="ccv">CCV:</label>
-          <input type="number" name="ccv">
-
+          <input type="number" name="ccv"><br>
           <!--Shoe Size Dropdown-->
           <label for="shoe_size">Shoe Size: </label>
             <select name="shoe_size">
@@ -123,16 +122,18 @@
               <option value="12.5">12.5</option>
               <option value="13">13</option>
             </select><br>
-        </div>
-      <div class="row align-items-center my-5">
-         <!--SUBMIT & RESET--> 
+            <!--SUBMIT & RESET--> 
         <input type="submit">
         <input type="reset">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-5">
+          <h1 class="font-weight-light">Welcome to Sneaker Bot!</h1>
+          <p>Our business is here to serve you in purchasing the best upcoming sneakers. Using modern-day technology, we are here to help you secure the hotteset shoes!</p>
+          <a class="btn btn-primary" href="#">Buy Shoes Here</a>
       </div>
-    </form>
-      <!-- /.col-md-4 -->
     </div>
-    <!-- /.row -->
+    </form>
 
    
   </div>
