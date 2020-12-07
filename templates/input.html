@@ -55,14 +55,46 @@
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <form action="{% url 'runBot' %}">
-        <label for="username">Username: </label>
-        <input type="text" name="username"><br>
-        <label for="password">Password: </label>
-        <input type="password" name="password"><br>
-        <label for="url">Url: </label>
-        <input type="text" name="url"><br>
-        <label for="shoeSize">Shoe Size: </label>
-        <select name="shoeSize">
+        <h2>Contact Information</h2>
+        <!--First Name-->
+        <label for="first_name">First Name: </label>
+        <input type="text" name="first_name"><br>
+        <!--Last Name-->
+        <label for="last_name">Last Name: </label>
+        <input type="text" name="last_name"><br>
+        <!--Email-->
+        <label for="email">Email: </label>
+        <input type="email" name="email"><br><br>
+        
+        <!--SHIPPING INFORMATION-->
+        <h2>Shipping Info</h2>
+        <!--Address-->
+        <label for="addr">Street Address:</label>
+        <input type="text" name="addr"><br>
+        <!--City-->
+        <label for="city">City:</label>
+        <input type="text" name="city"><br>
+        <!--State-->
+        <label for="state">State:</label>
+        <input type="text" name="state"><br>
+        <!--Zip Code-->
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" name="zip_code"><br><br>
+        <!--CARD INFO-->
+        <h2>Payment Information</h2>
+        <!--Card Number-->
+        <label for="card_number">Card Number:</label>
+        <input type="number" name="card_number"><br>
+        <!--Exp Date-->
+        <label for="exp_date">Expiration Date</label>
+        <input type="month" name="exp_date"><br>
+        <!--CCV Security Number-->
+        <label for="ccv">CCV:</label>
+        <input type="number" name="ccv">
+      </div>
+      <!--Shoe Size Dropdown-->
+      <label for="shoe_size">Shoe Size: </label>
+        <select name="shoe_size">
           <option value="1">1</option>
           <option value="1.5">1.5</option>
           <option value="2">2</option>
@@ -89,10 +121,12 @@
           <option value="12.5">12.5</option>
           <option value="13">13</option>
         </select><br>
+      <div class="row align-items-center my-5">
+         <!--SUBMIT & RESET--> 
         <input type="submit">
         <input type="reset">
-      </form>
       </div>
+    </form>
       <!-- /.col-md-4 -->
     </div>
     <!-- /.row -->
