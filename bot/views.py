@@ -7,6 +7,12 @@ def getIndex(request):
 def getForm(request):
   return render(request,'input.html')
 
+def getAbout(request):
+  return render(request, 'about.html')
+
+def getContact(request):
+  return render(request, 'contact.html')
+
 def runBot(request):
   print(request.GET)
   user = userInfo(first_name = request.GET["first_name"],

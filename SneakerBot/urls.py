@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bot.views import getIndex, getForm, runBot
+from bot.views import getIndex, getForm, runBot, getAbout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', getIndex, name = "index"),
-    path('input/', getForm, name = "form"),
+    path('input/', getForm, name = "input"),
     path('runBot/', runBot, name = "runBot"),
+    path('about/', getAbout, name = 'about'),
+    path('contact/', getContact, name = 'contact')
 ]
