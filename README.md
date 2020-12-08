@@ -19,9 +19,9 @@ python3 manage.py runserver
 ```
 
 The ouput is like this:   
-![code]()
+![code](code.png)
 
-You can then click on the IP address to open the site. The site looks like this.
+You can then click on the IP address to open the site. The site looks like this.   
 ![site]()
 
 ## Useful Websites
