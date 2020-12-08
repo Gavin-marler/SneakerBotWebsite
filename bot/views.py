@@ -34,4 +34,4 @@ def runBot(request):
                   product_id = request.GET["sneaker"],
                   shoe_size = request.GET["shoe_size"])
   user.save()
-  return redirect("index")
+  return redirect("confirm")
