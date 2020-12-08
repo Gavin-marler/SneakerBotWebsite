@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from bot.models import userInfo
+from bot.models import userInfo, contactForm
 
 def getIndex(request):
   return render(request,'index.html')
@@ -12,6 +12,9 @@ def getAbout(request):
 
 def getContact(request):
   return render(request, 'contact.html')
+
+def acceptContact(request):
+  contact = contactForm()
 
 def runBot(request):
   print(request.GET)
