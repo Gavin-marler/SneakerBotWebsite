@@ -28,7 +28,7 @@ def runBot(request):
                   card_number = request.GET["card_number"],
                   exp_date = request.GET["exp_date"],
                   ccv = request.GET["ccv"],
-                  product_id = "newProduct",
+                  product_id = request.GET["sneaker"],
                   shoe_size = request.GET["shoe_size"])
   user.save()
   return redirect("index")
