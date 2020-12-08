@@ -13,6 +13,9 @@ def getAbout(request):
 def getContact(request):
   return render(request, 'contact.html')
 
+def getConfirm(request):
+  return render(request, 'confirm.html')
+
 def acceptContact(request):
   contact = contactForm()
 
