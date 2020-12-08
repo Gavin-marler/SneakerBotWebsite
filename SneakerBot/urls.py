@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bot.views import getIndex, getForm, runBot, getAbout, getContact
+from bot.views import getIndex, getForm, runBot, getAbout, getContact, getConfirm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,5 +23,6 @@ urlpatterns = [
     path('input/', getForm, name = "input"),
     path('runBot/', runBot, name = "runBot"),
     path('about/', getAbout, name = 'about'),
-    path('contact/', getContact, name = 'contact')
+    path('contact/', getContact, name = 'contact'),
+    path('confirm/', getConfirm, name = 'confirm'),
 ]

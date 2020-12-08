@@ -13,6 +13,9 @@ def getAbout(request):
 def getContact(request):
   return render(request, 'contact.html')
 
+def getConfirm(request):
+  return render(request, 'confirm.html')
+
 def acceptContact(request):
   contact = contactForm()
 
@@ -31,4 +34,4 @@ def runBot(request):
                   product_id = request.GET["sneaker"],
                   shoe_size = request.GET["shoe_size"])
   user.save()
-  return redirect("index")
+  return redirect("confirm")
