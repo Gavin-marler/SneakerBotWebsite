@@ -25,8 +25,10 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'index' %}"><img height="auto" width="100px" alt="logo" src="{% static 'img/SneakerBotLogo.png' %}"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="{% url 'index' %}"><img height="auto" width="100px" alt="logo"
+          src="{% static 'img/SneakerBotLogo.png' %}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -54,8 +56,8 @@
   <div class="container">
 
     <form action="{% url 'runBot' %}">
-    <!-- Heading Row -->
-    <div class="row align-items-center my-5">
+      <!-- Heading Row -->
+      <div class="row align-items-center my-5">
         <div class="col-lg-7">
           <h2>Contact Information</h2>
           <!--First Name-->
@@ -67,7 +69,7 @@
           <!--Email-->
           <label for="email">Email: </label>
           <input type="email" name="email"><br><br>
-          
+
           <!--SHIPPING INFORMATION-->
           <h2>Shipping Info</h2>
           <!--Address-->
@@ -95,97 +97,105 @@
           <input type="number" name="ccv"><br>
           <!--Shoe Size Dropdown-->
           <label for="shoe_size">Shoe Size: </label>
-            <select name="shoe_size">
-              <option value="1">1</option>
-              <option value="1.5">1.5</option>
-              <option value="2">2</option>
-              <option value="2.5">2.5</option>
-              <option value="3">3</option>
-              <option value="3.5">3.5</option>
-              <option value="4">4</option>
-              <option value="4.5">4.5</option>
-              <option value="5">5</option>
-              <option value="5.5">5.5</option>
-              <option value="6">6</option>
-              <option value="6.5">6.5</option>
-              <option value="7">7</option>
-              <option value="7.5">7.5</option>
-              <option value="8">8</option>
-              <option value="8.5">8.5</option>
-              <option value="9">9</option>
-              <option value="9.5">9.5</option>
-              <option value="10">10</option>
-              <option value="10.5">10.5</option>
-              <option value="11">11</option>
-              <option value="11.5">11.5</option>
-              <option value="12">12</option>
-              <option value="12.5">12.5</option>
-              <option value="13">13</option>
-            </select><br>
-            <!--SUBMIT & RESET--> 
-        <input type="submit">
-        <input type="reset">
+          <select name="shoe_size">
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+            <option value="6.5">6.5</option>
+            <option value="7">7</option>
+            <option value="7.5">7.5</option>
+            <option value="8">8</option>
+            <option value="8.5">8.5</option>
+            <option value="9">9</option>
+            <option value="9.5">9.5</option>
+            <option value="10">10</option>
+            <option value="10.5">10.5</option>
+            <option value="11">11</option>
+            <option value="11.5">11.5</option>
+            <option value="12">12</option>
+            <option value="12.5">12.5</option>
+            <option value="13">13</option>
+          </select><br>
+          <!--SUBMIT & RESET-->
+          <input type="submit">
+          <input type="reset">
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-sm-5">
           <div class="row">
-          <div class="col-sm-5 mb-5">
-            <div class="card h-100 d-inline-block">
-              <div class="card-body">
-                <h2 class="card-title">Air Jordan 11 Jubilee</h2>
-                <img  alt="" width="100%" height="auto" src="{% static 'img/aj11Jubilee.jpg' %}">
+            <div class="col-sm-5 mb-5">
+              <div class="card h-100 d-inline-block">
+                <div class="card-body">
+                  <h2 class="card-title">Air Jordan 11 Jubilee</h2>
+                  <img alt="" width="100%" height="auto" src="{% static 'img/aj11Jubilee.jpg' %}">
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.nike.com/launch/t/air-jordan-11-jubilee" class="btn btn-primary btn-sm">More
+                    Info</a>
+                  <input type="radio" id="maize" name="sneaker"
+                    value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
+                </div>
               </div>
-              <div class="card-footer">
-                <a href="https://www.nike.com/launch/t/air-jordan-11-jubilee" class="btn btn-primary btn-sm">More Info</a>
-                  <input type="radio" id="maize" name="sneaker" value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-sm-5 mb-5">
+              <div class="card h-100 d-inline-block">
+                <div class="card-body">
+                  <h2 class="card-title">Air Max 1 Lemonade</h2>
+                  <img alt="" height="auto" width="100%" src="{% static 'img/am1Lemonade.jpg' %}">
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.nike.com/launch/t/air-max-1-lemonade" class="btn btn-primary btn-sm">More
+                    Info</a>
+                  <input type="radio" id="maize" name="sneaker"
+                    value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
+                </div>
               </div>
             </div>
           </div>
           <!-- /.col-md-4 -->
-          <div class="col-sm-5 mb-5">
-            <div class="card h-100 d-inline-block">
-              <div class="card-body">
-                <h2 class="card-title">Air Max 1 Lemonade</h2>
-                <img alt= "" height="auto" width="100%" src="{% static 'img/am1Lemonade.jpg' %}">
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-5 mb-5">
+                <div class="card h-100 d-inline-block">
+                  <div class="card-body">
+                    <h2 class="card-title">Kobe V Bruce Lee</h2>
+                    <img alt="" height="auto" width="100%" src="{% static 'img/kb5BruceLee.jpg' %}">
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://www.nike.com/launch/t/kobe-5-protro-bruce-lee" class="btn btn-primary btn-sm">More
+                      Info</a>
+                    <input type="radio" id="maize" name="sneaker"
+                      value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
+                  </div>
+                </div>
               </div>
-              <div class="card-footer">
-                <a href="https://www.nike.com/launch/t/air-max-1-lemonade" class="btn btn-primary btn-sm">More Info</a>
-                  <input type="radio" id="maize" name="sneaker" value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
-              </div>
-            </div>
-          </div>
-        </div>
-          <!-- /.col-md-4 -->
-        <div class="col-sm-5">
-          <div class="row"> 
-          <div class="col-sm-5 mb-5">
-            <div class="card h-100 d-inline-block">
-              <div class="card-body">
-                <h2 class="card-title">Kobe V Bruce Lee</h2>
-                <img alt="" height="auto" width="100%" src="{% static 'img/kb5BruceLee.jpg' %}">
-              </div>
-              <div class="card-footer">
-                <a href="https://www.nike.com/launch/t/kobe-5-protro-bruce-lee" class="btn btn-primary btn-sm">More Info</a>
-                  <input type="radio" id="maize" name="sneaker" value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 -->
-          <div class="col-sm-5 mb-5">
-            <div class="card h-100 d-inline-block">
-              <div class="card-body">
-                <h2 class="card-title">Kobe V Bruce Lee</h2>
-                <img alt="" height="auto" width="100%" src="{% static 'img/kb5BruceLee.jpg' %}">
-              </div>
-              <div class="card-footer">
-                <a href="https://www.nike.com/launch/t/kobe-5-protro-bruce-lee" class="btn btn-primary btn-sm">More Info</a>
-                  <input type="radio" id="maize" name="sneaker" value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
+              <!-- /.col-md-4 -->
+              <div class="col-sm-5 mb-5">
+                <div class="card h-100 d-inline-block">
+                  <div class="card-body">
+                    <h2 class="card-title">Kobe V Bruce Lee</h2>
+                    <img alt="" height="auto" width="100%" src="{% static 'img/kb5BruceLee.jpg' %}">
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://www.nike.com/launch/t/kobe-5-protro-bruce-lee" class="btn btn-primary btn-sm">More
+                      Info</a>
+                    <input type="radio" id="maize" name="sneaker"
+                      value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-      </div>
         <!-- <div class="col-lg-5">
           <form>
             <input type="radio" id="maize" name="sneaker" value="https://www.nike.com/launch/t/dunk-high-varsity-maize">
@@ -197,10 +207,10 @@
           <p>Our business is here to serve you in purchasing the best upcoming sneakers. Using modern-day technology, we are here to help you secure the hottest sneakers!</p>
           <a class="btn btn-primary" href="#">Buy Shoes Here</a>
       </div> -->
-    </div>
+      </div>
     </form>
 
-   
+
   </div>
   <!-- /.container -->
 
@@ -208,7 +218,8 @@
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Sneaker Bot 2020</p><br>
-      <p class="m-0 text-center text-white">Every purchase is a chance to buy sneakers on the day that they drop. No purchase is guaranteed, and you will not be charged for an unsuccessful bot run.</p>
+      <p class="m-0 text-center text-white">Every purchase is a chance to buy sneakers on the day that they drop. No
+        purchase is guaranteed, and you will not be charged for an unsuccessful bot run.</p>
     </div>
     <!-- /.container -->
   </footer>
