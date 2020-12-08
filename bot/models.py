@@ -1,5 +1,10 @@
 from django.db import models
 
+class contactForm(models.Model):
+  name = models.TextField()
+  email = models.EmailField()
+  message = models.TextField()
+  
 class userInfo(models.Model):
   #personal info
   first_name = models.TextField()
