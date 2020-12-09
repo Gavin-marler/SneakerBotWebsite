@@ -22,7 +22,11 @@ The ouput is like this:
 ![code](code.png)
 
 You can then click on the IP address to open the site. The site looks like this.   
-![site]()
+![site](homepage.png)
+![cart](cart.png)
+![about](about.png)
+![contact](contact.png)
+
 
 ## Useful Websites
 
