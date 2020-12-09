@@ -55,7 +55,7 @@
 
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
-        <form action="/my-handling-form-page" method="post">
+        <form action="{% url 'acceptContact' %}" method="GET">
             <ul style="list-style-type: none;">
               <li>
                 <label for="name">Name:</label>
@@ -74,19 +74,6 @@
               </li>
             </ul>
           </form>
-          <script>
-            const feedbackElement = document.getElementById("feedback");
-            const formElement = document.forms[0];
-            formElement.addEventListener("submit", function(e) {
-              e.preventDefault();
-              feedbackElement.innerHTML =
-                "Hello " +
-                formElement.user_name.value +
-                "! Thank you for your message. We will get back with you as soon as possible!";
-              feedbackElement.style.display = "block";
-              document.body.classList.toggle("moveDown");
-            });
-          </script>
       </div>
       <!-- /.col-md-4 -->
     </div>
@@ -101,23 +88,6 @@
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Sneaker Bot 2020</p><br>
       <p class="m-0 text-center text-white">Every purchase is a chance to buy sneakers on the day that they drop. No purchase is guaranteed, and you will not be charged for an unsuccessful bot run.</p>
-      <div class="d-flex justify-content-center">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="https://cdn.glitch.com/1efb7f80-a00c-4adb-854e-792b6291a964%2Ffacebook.png?v=1602199903883"
-            alt="Facebook logo"
-        /></a>
-        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="https://cdn.glitch.com/1efb7f80-a00c-4adb-854e-792b6291a964%2Ftwitter.png?v=1602199905859"
-            alt="Twitter logo"
-        /></a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="https://cdn.glitch.com/1efb7f80-a00c-4adb-854e-792b6291a964%2Fyoutube.png?v=1602199907450"
-            alt="YouTube logo"
-        /></a>
-        </div>
     </div>
     <!-- /.container -->
   </footer>
