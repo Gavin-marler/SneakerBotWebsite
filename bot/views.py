@@ -17,11 +17,11 @@ def getConfirm(request):
   return render(request, 'confirm.html')
 
 def acceptContact(request):
-  print(request.GET)
   contact = contactForm(name = request.GET["user_name"],
                         email = request.GET["user_email"],
                         message = request.GET["user_message"])
   contact.save()
+  print(request.GET)
   return redirect("input")
 
 def runBot(request):
