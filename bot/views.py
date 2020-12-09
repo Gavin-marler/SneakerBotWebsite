@@ -18,11 +18,9 @@ def getConfirm(request):
 
 def acceptContact(request):
   print(request.GET)
-  contact = contactForm(
-    name = request.GET["user_name"],
-    email = request.GET["user_email"],
-    message = request.GET["user_message"]
-  )
+  contact = contactForm(name = request.GET["user_name"],
+                        email = request.GET["user_email"],
+                        message = request.GET["user_message"])
   contact.save()
   return redirect("input")
 
