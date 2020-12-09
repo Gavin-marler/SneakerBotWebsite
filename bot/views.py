@@ -24,7 +24,7 @@ def acceptContact(request):
     message = request.GET["user_message"]
   )
   contact.save()
-  return redirect("index")
+  return redirect("input")
 
 def runBot(request):
   print(request.GET)
